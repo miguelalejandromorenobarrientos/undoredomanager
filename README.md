@@ -5,7 +5,7 @@ The library consists of three clases:
 
 1. **UndoRedoable**:  derived classes must implement **#undo**, **#redo** methods to define invertible actions
 2. **UndoRedoTransaction**: defines a undoredoable **transaction** *(multiple actions treated atomically)*. Main method **#add** for adding single actions or another transactions to this one
-3. **UndoRedoManager**: queue with all added undoredoable actions and transactions. Main method **#addItem** for adding new single actions or transactions
+3. **UndoRedoManager**: stack with all added undoredoable actions and transactions. Main method **#addItem** for adding new single actions or transactions. **subscribers** property for adding subscribers on change
 
 
 -----
